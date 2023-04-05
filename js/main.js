@@ -1,15 +1,19 @@
-import flags from './model/flags.js';
+import aniversariantes from './model/aniversariantes.js';
 
-const flagHTML = document.querySelector("#flags")
+const aniversariantesHTML = document.querySelector(".aniv")
 
-function displayFlags(flag)
+function displayAniversariantes(flag)
 {
-    flagHTML.innerHTML += `
-    <div class="flag col-2 my-2 text-center">
-        <img src="${flag.image}" alt="${flag.name}">
-        <p>${flag.name}</p>
-    </div> 
+    aniversariantesHTML.innerHTML += `
+    <p>${flag.data} - ${flag.nome}</p>
     `
 }
 
-flags.forEach(displayFlags)
+aniversariantes.forEach(displayAniversariantes)
+
+// aniversariantesHTML.innerHTML += `
+    // <div class="flag col-2 my-2 text-center">
+    //     <img src="${flag.image}" alt="${flag.name}">
+    //     <p>${flag.name}</p>
+    // </div> 
+    // `

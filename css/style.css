@@ -1,10 +1,7 @@
 body {
   margin: 0;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .titulo{
@@ -17,8 +14,20 @@ body {
   align-items: center;
 }
 
+.meses{
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.meses > hr{
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   padding: 20px;
+  grid-area: 'mes';
 }
 
 .container h1 {
