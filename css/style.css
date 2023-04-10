@@ -4,7 +4,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font: black;
   font-weight: bolder;
-  background-color: #0E6CAC;
+  background-color: #126CAB;
   background-image: url(../imgs/assembleia.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -37,19 +37,16 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .meses > hr{
-    padding: 0;
-    margin: 0;
+  .meses > .content hr{
+    height: 1px;
+    border: none;
+    background-color: black;
   }
   
   .content {
     padding: 20px;
     grid-area: 'mes';
     transition: all 1s;
-  }
-
-  .content > .aniversariantes > p{
-    margin: 0px;
   }
   
   .container h2 {
@@ -66,11 +63,11 @@ body {
     margin: 0;
     padding: 0;
   }
-}
 
-@media (min-width: 530px) {
-  .content > .aniversariantes > p{
-    margin: 10px;
+  .container > .footer{
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
 }
 
