@@ -234,6 +234,11 @@ export const aniversariantes = [
     data: '19',
     mes: 4,
   },
+  {
+    nome: 'Anylton',
+    data: '08',
+    mes: 5,
+  },
 ];
 
 // {
