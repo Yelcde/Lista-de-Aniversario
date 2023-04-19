@@ -26,9 +26,10 @@ body {
   
   .container {
     background-color: rgba(253, 253, 253, 0.342);
-    border-radius: 52px;
+    border-radius: 0px;
     padding: 40px;
-    margin: 20px
+    margin: 0px;
+    transition: all .5s;
   }
   
   .meses{
@@ -46,7 +47,6 @@ body {
   .content {
     padding: 20px;
     grid-area: 'mes';
-    transition: all 1s;
   }
   
   .container h2 {
@@ -71,8 +71,20 @@ body {
   }
 }
 
+@media (min-width: 450px) {
+  .container{
+    border-radius: 52px;
+    margin: 20px;
+    transition: all .5s;
+  }
+}
+
 @media (min-width: 600px) {
   .meses{
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container{
+    transition: all .5s;
   }
 }
